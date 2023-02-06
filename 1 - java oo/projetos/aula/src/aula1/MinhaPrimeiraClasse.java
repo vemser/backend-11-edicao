@@ -1,3 +1,5 @@
+package aula1;
+
 public class MinhaPrimeiraClasse {
     // MaiconGerardi
     // maiconGerardi

@@ -1,3 +1,5 @@
+package aula1;
+
 public class VariaveisEConstantes {
     public static void main(String[] args) {
         String nome;

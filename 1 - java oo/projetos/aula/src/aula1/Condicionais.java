@@ -1,3 +1,5 @@
+package aula1;
+
 public class Condicionais {
     public static void main(String[] args) {
         // comando if (se)

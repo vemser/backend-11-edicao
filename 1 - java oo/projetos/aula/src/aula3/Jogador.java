@@ -7,9 +7,30 @@ public class Jogador {
     int altura;
     double peso;
     int nrCamisa; // 01 ?
-    String time;
+    static String time;
     String modalidade;
     int velocidadeAtual;
+
+    public Jogador() {
+
+    }
+
+    public Jogador(String nome) {
+        this.nome = nome;
+    }
+
+    public Jogador(String nome, String time) {
+        this.nome = nome;
+        this.time = time;
+    }
+
+    //
+    public Jogador(String nome, int velocidadeAtual, int altura, int idade) {
+        this.nome = nome;
+        this.velocidadeAtual = velocidadeAtual;
+        this.altura = altura;
+        this.idade = idade;
+    }
 
     // metodos / comportamentos
 //    correr
@@ -27,17 +48,17 @@ public class Jogador {
         System.out.println("o jogador correu");
     }
 
-    int simularCorrida(){
+    int simularCorrida() {
         int simulacao = velocidadeAtual + 5;
         return simulacao;
     }
 
-    int simularCorridaComParametros(int valorSimulacao){
+    int simularCorridaComParametros(int valorSimulacao) {
         int simulacao = velocidadeAtual + valorSimulacao;
         return simulacao;
     }
 
-    int simularCorridaComParametros2(int valorSimulacao, String mensagem){
+    int simularCorridaComParametros2(int valorSimulacao, String mensagem) {
         int simulacao = velocidadeAtual + valorSimulacao;
         System.out.println(mensagem);
         return simulacao;
@@ -45,6 +66,10 @@ public class Jogador {
 
     void fazerFinta() {
         velocidadeAtual--;
+    }
+
+    public String toString() {
+        return nome + " time: " + time;
     }
 
 }

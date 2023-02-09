@@ -10,7 +10,7 @@ public class Main {
 
 //        SerHumano serHumano = new SerHumano();
 
-        Arquiteto arquiteto = new Arquiteto();
-        arquiteto.setNome("");
+//        Arquiteto arquiteto = new Arquiteto();
+//        arquiteto.setNome("");
     }
 }

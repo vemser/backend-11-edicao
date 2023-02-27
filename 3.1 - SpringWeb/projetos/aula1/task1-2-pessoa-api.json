@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "fb9d7bd8-66dd-4cde-9259-b7b1d9e37ca7",
+		"name": "task1-2-pessoa-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16883472"
+	},
+	"item": [
+		{
+			"name": "Autenticar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"login\": \"admin\",\r\n  \"senha\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/auth",
+					"protocol": "http",
+					"host": [
+						"vemser-dbc",
+						"dbccompany",
+						"com",
+						"br"
+					],
+					"port": "39000",
+					"path": [
+						"vemser",
+						"dbc-pessoa-api",
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pessoa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ2ZW1zZXItYXBpIiwianRpIjoiMiIsImNhcmdvcyI6WyJST0xFX0FETUlOIiwiUk9MRV9NQVJLRVRJTkciLCJST0xFX1VTVUFSSU8iXSwiaWF0IjoxNjc3NTI3NzY5LCJleHAiOjE2Nzc2MTQxNjl9.wWFFlph-JRC7CILw24YZl6t9a9ESJUeX0WXRIumgoTc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://vemser-dbc.dbccompany.com.br:39000/vemser/dbc-pessoa-api/pessoa",
+					"protocol": "http",
+					"host": [
+						"vemser-dbc",
+						"dbccompany",
+						"com",
+						"br"
+					],
+					"port": "39000",
+					"path": [
+						"vemser",
+						"dbc-pessoa-api",
+						"pessoa"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
